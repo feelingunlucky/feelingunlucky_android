@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="today.feelingunlucky" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<preference name="loglevel" value="DEBUG" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<feature name="Whitelist">
+		<param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+		<param name="onload" value="true" />
+	</feature>
+	<feature name="HostedWebApp">
+		<param name="android-package" value="com.manifoldjs.hostedwebapp.HostedWebApp" />
+		<param name="onload" value="true" />
+	</feature>
+	<allow-intent href="market:*" />
+	<name>FeelingUnlucky</name>
+	<description>
+		Shows the last Google search result
+	</description>
+	<author email="mathusum.mut@gmail.com" href="https://feelingunlucky.today">
+		MathuSum Mut
+	</author>
+	<content src="https://feelingunlucky.today/" />
+	<access origin="*" />
+	<allow-intent href="tel:*" />
+	<allow-intent href="sms:*" />
+	<allow-intent href="mailto:*" />
+	<allow-intent href="geo:*" />
+	<preference name="Orientation" value="default" />
+	<preference name="Fullscreen" value="false" />
+	<allow-navigation hap-rule="yes" href="https://feelingunlucky.today/*" />
+</widget>
