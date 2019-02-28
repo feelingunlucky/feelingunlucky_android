@@ -30,13 +30,13 @@ public class MainActivity extends CordovaActivity {
 		Uri appLinkData = getIntent().getData();
 		String query = null;
 		if (appLinkData != null) {
-			query = appLinkData.getQueryParameter("search");
+			query = appLinkData.getQueryParameter("q");
 			if (query != null)
 				query = query.trim();
 		}
 		if (query == null || query.length() == 0)
 			loadUrl("file:///android_asset/www/index.html");
 		else
-			loadUrl("file:///android_asset/www/index.html?search=" + query);
+			loadUrl("file:///android_asset/www/index.html?q=" + query);
 	}
 }
